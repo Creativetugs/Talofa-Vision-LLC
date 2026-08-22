@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talofa Vision Movers | Professional Moving Services in Grantsville, UT</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            500: '#D4AF37',
+                            600: '#C5A059',
+                            700: '#AA823E',
+                            900: '#664E19',
+                        },
+                        dark: {
+                            900: '#0B0B0B',
+                            800: '#161616',
+                            700: '#262626',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #AA823E 100%);
+        }
+        .gold-text-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #C5A059 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(11, 11, 11, 0.95), rgba(11, 11, 11, 0.85));
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <img src="https://raw.githubusercontent.com/Creativetugs/Talofa-Vision-LLC/refs/heads/main/logo.jpg" alt="Talofa Vision Movers Logo" class="h-12 w-12 object-cover rounded-full border-2 border-gold-500 shadow-md transition transform group-hover:scale-105">
+                <div>
+                    <span class="block text-lg font-black tracking-wider text-dark-900 leading-none">TALOFA VISION</span>
+                    <span class="block text-xs font-semibold tracking-widest text-gold-600 uppercase mt-1">Movers</span>
+                </div>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-700">
+                <a href="#services" class="hover:text-gold-600 transition">Services</a>
+                <a href="#why-us" class="hover:text-gold-600 transition">Why Us</a>
+                <a href="#action" class="hover:text-gold-600 transition">Our Work</a>
+                <a href="#process" class="hover:text-gold-600 transition">How It Works</a>
+                <a href="#faq" class="hover:text-gold-600 transition">FAQ</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="tel:5627661350" class="hidden lg:flex items-center text-sm font-bold text-dark-900 hover:text-gold-600 transition">
+                    <div class="w-9 h-9 rounded-full gold-gradient text-white flex items-center justify-center mr-2 shadow-sm">
+                        <i class="fa-solid fa-phone text-xs"></i>
+                    </div>
+                    (562) 766-1350
+                </a>
+                <button onclick="openQuoteModal()" class="gold-gradient text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-md hover:opacity-95 transition transform active:scale-95">
+                    Get Free Quote
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-dark-950 text-white overflow-hidden min-h-[90vh] flex items-center">
+        <!-- Background image with dark overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://raw.githubusercontent.com/Creativetugs/Talofa-Vision-LLC/refs/heads/main/image1.jpg" alt="Talofa Vision Movers Professional Team" class="w-full h-full object-cover opacity-30 transform scale-105 animate-pulse duration-1000">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 w-full">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center space-x-2 bg-dark-800/80 border border-gold-500/30 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest text-gold-500 mb-6 backdrop-blur-sm">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Fully Licensed & Insured • Local Movers</span>
+                </div>
+                
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-none mb-6">
+                    Your Move. Our Mission. <br>
+                    <span class="gold-text-gradient">A Stress-Free Experience.</span>
+                </h1>
+                
+                <p class="text-lg sm:text-xl text-gray-300 mb-8 leading-relaxed font-light">
+                    Professional Moving Services You Can Count On. Moving doesn't have to be overwhelming. Whether you're moving across town, into a new home, changing apartments, or relocating your business, Talofa Vision Movers is ready to help make the process easier from the first box to the final unload.
+                </p>
+
+                <p class="text-base text-gray-400 mb-10">
+                    We provide dependable moving assistance with the care, professionalism, and hands-on service your belongings deserve.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-5">
+                    <button onclick="openQuoteModal()" class="gold-gradient text-white text-center px-8 py-4 rounded-xl font-bold text-base shadow-lg hover:shadow-gold-500/20 hover:scale-[1.02] transition">
+                        <i class="fa-solid fa-calculator mr-2"></i> GET YOUR FREE MOVING QUOTE
+                    </button>
+                    <a href="tel:5627661350" class="bg-dark-800 border border-gray-700 text-white text-center px-8 py-4 rounded-xl font-bold text-base hover:bg-dark-700 transition flex items-center justify-center">
+                        <i class="fa-solid fa-phone text-gold-500 mr-2"></i> CALL (562) 766-1350
+                    </a>
+                </div>
+
+                <div class="mt-8 flex items-center text-xs text-gray-400 space-x-2">
+                    <i class="fa-solid fa-location-dot text-gold-500"></i>
+                    <span>Serving Grantsville, UT and surrounding areas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAKE YOUR NEXT MOVE THE EASY PART -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-gold-600 font-bold uppercase tracking-widest text-xs">Stress-Free Relocation</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-dark-900 mt-2 mb-6">
+                        Moving Day Shouldn't Have to Be a Headache
+                    </h2>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        There is enough to think about when you're moving. Packing. Boxes. Furniture. Heavy lifting. Loading. Transportation. Unloading. Making sure nothing gets damaged along the way.
+                    </p>
+                    <div class="bg-gray-50 border-l-4 border-gold-500 p-6 rounded-r-2xl mb-6">
+                        <p class="text-dark-900 font-semibold italic text-base">
+                            "You don't have to do it all yourself."
+                        </p>
+                    </div>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        At Talofa Vision Movers, we put our experience and hard work behind every move. Our team helps take the physical stress out of moving so you can concentrate on what matters — getting settled into your new home or business.
+                    </p>
+                    <p class="text-gray-700 font-medium mb-8">
+                        Whether you need help with a complete move or simply need extra hands for the heavy lifting, we're here to help.
+                    </p>
+                    <button onclick="openQuoteModal()" class="inline-flex items-center text-dark-900 font-bold hover:text-gold-600 group transition">
+                        <span class="border-b-2 border-gold-500 pb-1">TELL US ABOUT YOUR MOVE</span>
+                        <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-1 transition"></i>
+                    </button>
+                </div>
+                <div class="relative">
+                    <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="https://raw.githubusercontent.com/Creativetugs/Talofa-Vision-LLC/refs/heads/main/image2.jpg" alt="Talofa Vision Movers Team Hard At Work" class="w-full h-[450px] object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-72 h-72 gold-gradient rounded-full opacity-10 filter blur-3xl z-0"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR MOVING SERVICES -->
+    <section id="services" class="py-24 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-600 font-bold uppercase tracking-widest text-xs">Comprehensive Assistance</span>
+                <h2 class="text-3xl sm:text-5xl font-black text-dark-900 mt-2 mb-4">From the First Box to the Final Delivery</h2>
+                <p class="text-gray-600 text-lg">Professional moving solutions tailored to your unique requirements.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition border border-gray-100 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl gold-gradient text-white flex items-center justify-center text-xl mb-6 shadow-md group-hover:scale-110 transition">
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark-900 mb-3">Residential Moving</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Moving into a new home? Let our team take care of the heavy lifting. We help make residential moves more organized, efficient, and manageable.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100 text-xs font-semibold text-gold-600 uppercase tracking-wider">
+                        Home • House • Condo • Apartment
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition border border-gray-100 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl gold-gradient text-white flex items-center justify-center text-xl mb-6 shadow-md group-hover:scale-110 transition">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark-900 mb-3">Local Moving</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Staying nearby doesn't mean moving is easy. Our local moving services are designed to take the stress and physical work out of your next move.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100 text-xs font-semibold text-gold-600 uppercase tracking-wider">
+                        Local Relocations • Neighborhood Moves • Short-Distance
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition border border-gray-100 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl gold-gradient text-white flex items-center justify-center text-xl mb-6 shadow-md group-hover:scale-110 transition">
+                            <i class="fa-solid fa-box-archive"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark-900 mb-3">Apartment & Small Moves</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Not every move requires a huge operation. Whether you're moving into your first apartment or relocating to a new place, we'll help get your belongings where they need to go.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100 text-xs font-semibold text-gold-600 uppercase tracking-wider">
+                        Apartments • Studios • Small Homes • Individual Items
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition border border-gray-100 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl gold-gradient text-white flex items-center justify-center text-xl mb-6 shadow-md group-hover:scale-110 transition">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark-900 mb-3">Office & Business Moving</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Relocating your business? Keep your move organized and minimize disruption with professional help moving furniture, equipment, and other items.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100 text-xs font-semibold text-gold-600 uppercase tracking-wider">
+                        Offices • Small Businesses • Furniture • Equipment
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition border border-gray-100 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl gold-gradient text-white flex items-center justify-center text-xl mb-6 shadow-md group-hover:scale-110 transition">
+                            <i class="fa-solid fa-dolly"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark-900 mb-3">Loading & Unloading</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Already have a truck or transportation arranged? No problem. Our team can provide the extra hands you need to safely load and unload furniture, boxes, appliances, and heavy items.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100 text-xs font-semibold text-gold-600 uppercase tracking-wider">
+                        Need the muscle? We've got you covered.
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition border border-gray-100 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl gold-gradient text-white flex items-center justify-center text-xl mb-6 shadow-md group-hover:scale-110 transition">
+                            <i class="fa-solid fa-people-carry-box"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark-900 mb-3">Moving Labor</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Sometimes you don't need the whole package — you just need reliable people who can do the hard work. Our moving labor service gives you experienced hands for difficult jobs.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100 text-xs font-semibold text-gold-600 uppercase tracking-wider">
+                        Heavy Lifting • Loading • Unloading • Furniture Moving
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY TALOFA VISION MOVERS? -->
+    <section id="why-us" class="py-24 bg-dark-950 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-500 font-bold uppercase tracking-widest text-xs">Unmatched Commitment</span>
+                <h2 class="text-3xl sm:text-5xl font-black mt-2 mb-4">We Don't Just Move Boxes. We Move What Matters.</h2>
+                <p class="text-gray-400 text-lg">Your belongings aren't just things. They're the furniture you built your home around, the equipment behind your business, and the possessions that matter to you.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-dark-900 border border-gray-800 p-8 rounded-3xl hover:border-gold-500/50 transition">
+                    <div class="text-gold-500 text-2xl mb-4"><i class="fa-solid fa-hands-holding"></i></div>
+                    <h3 class="text-xl font-bold mb-3">HANDS-ON SERVICE</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">You won't be left trying to figure everything out yourself. Our team is there to help with the physical work your move requires.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-dark-900 border border-gray-800 p-8 rounded-3xl hover:border-gold-500/50 transition">
+                    <div class="text-gold-500 text-2xl mb-4"><i class="fa-solid fa-shield-heart"></i></div>
+                    <h3 class="text-xl font-bold mb-3">CAREFUL HANDLING</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">From furniture and boxes to larger household items, we work carefully throughout the loading and unloading process.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-dark-900 border border-gray-800 p-8 rounded-3xl hover:border-gold-500/50 transition">
+                    <div class="text-gold-500 text-2xl mb-4"><i class="fa-solid fa-user-check"></i></div>
+                    <h3 class="text-xl font-bold mb-3">PROFESSIONAL & RELIABLE</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">We understand that moving depends on people you can trust. Our goal is a straightforward, professional experience from beginning to end.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-dark-900 border border-gray-800 p-8 rounded-3xl hover:border-gold-500/50 transition">
+                    <div class="text-gold-500 text-2xl mb-4"><i class="fa-solid fa-award"></i></div>
+                    <h3 class="text-xl font-bold mb-3">LICENSED & INSURED</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Move with greater peace of mind knowing you're working with a fully licensed and insured moving company.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-dark-900 border border-gray-800 p-8 rounded-3xl hover:border-gold-500/50 transition">
+                    <div class="text-gold-500 text-2xl mb-4"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <h3 class="text-xl font-bold mb-3">LOCAL KNOWLEDGE</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">We're a local moving company serving customers in and around the Grantsville, Utah area.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-dark-900 border border-gray-800 p-8 rounded-3xl hover:border-gold-500/50 transition">
+                    <div class="text-gold-500 text-2xl mb-4"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                    <h3 class="text-xl font-bold mb-3">FREE QUOTES</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Every move is different. Tell us what you're moving, where you're going, and what kind of help you need to find the right service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEE US IN ACTION -->
+    <section id="action" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-600 font-bold uppercase tracking-widest text-xs">Real Results, Real Work</span>
+                <h2 class="text-3xl sm:text-5xl font-black text-dark-900 mt-2 mb-4">We Don't Just Tell You We Work Hard. We Show You.</h2>
+                <p class="text-gray-600 text-lg">Moving is hands-on work — and we believe you should be able to see the people behind the service.</p>
+            </div>
+
+            <!-- Facebook Video Embeds Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center mb-12">
+                <div class="bg-gray-50 rounded-3xl p-4 shadow-sm border border-gray-200 overflow-hidden flex flex-col items-center">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1617181559494514%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden;border-radius:1rem;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    <span class="text-xs font-semibold text-gray-500 mt-3">Talofa Vision Movers Reel #1</span>
+                </div>
+                <div class="bg-gray-50 rounded-3xl p-4 shadow-sm border border-gray-200 overflow-hidden flex flex-col items-center">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1664631811199651%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden;border-radius:1rem;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    <span class="text-xs font-semibold text-gray-500 mt-3">Talofa Vision Movers Reel #2</span>
+                </div>
+                <div class="bg-gray-50 rounded-3xl p-4 shadow-sm border border-gray-200 overflow-hidden flex flex-col items-center">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1669636734178554%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden;border-radius:1rem;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    <span class="text-xs font-semibold text-gray-500 mt-3">Talofa Vision Movers Reel #3</span>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="https://www.facebook.com" target="_blank" class="inline-flex items-center text-dark-900 font-bold hover:text-gold-600 transition group text-lg">
+                    <span class="border-b-2 border-gold-500 pb-1">SEE MORE OF OUR WORK ON FACEBOOK</span>
+                    <i class="fa-brands fa-facebook ml-2 text-gold-600 text-xl transform group-hover:scale-110 transition"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="process" class="py-24 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-600 font-bold uppercase tracking-widest text-xs">Easy Process</span>
+                <h2 class="text-3xl sm:text-5xl font-black text-dark-900 mt-2 mb-4">Your Move Starts With Three Simple Steps</h2>
+                <p class="text-gray-600 text-lg">Simple. Straightforward. No unnecessary hassle.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                <!-- Step 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-200 relative">
+                    <span class="text-5xl font-black text-gold-500/20 block mb-4">01</span>
+                    <h3 class="text-xl font-bold text-dark-900 mb-3">CONTACT US</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Tell us where you're moving, when you're moving, and what kind of help you need.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-200 relative">
+                    <span class="text-5xl font-black text-gold-500/20 block mb-4">02</span>
+                    <h3 class="text-xl font-bold text-dark-900 mb-3">GET YOUR QUOTE</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">We'll discuss your move and help you understand the services you'll need.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-200 relative">
+                    <span class="text-5xl font-black text-gold-500/20 block mb-4">03</span>
+                    <h3 class="text-xl font-bold text-dark-900 mb-3">LET'S GET MOVING</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Once everything is arranged, our team gets to work so you can focus on settling into your new place.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MOVING WITH CONFIDENCE -->
+    <section class="py-24 gold-gradient text-white relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="bg-black/20 text-white px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6 inline-block">Experience The Difference</span>
+            <h2 class="text-3xl sm:text-5xl font-black mb-6 leading-tight">The Right Help Can Change Your Entire Moving Day</h2>
+            <p class="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto mb-8 font-light">
+                You can spend your moving day carrying furniture, lifting boxes, and worrying about how everything is going to get done. Or you can have a team helping you handle the hard work.
+            </p>
+            <p class="text-base font-medium mb-10">Talofa Vision Movers is here to make your move easier. Whether you're moving a full household or simply need help loading a truck, we'll work with you to find the right solution.</p>
+            <button onclick="openQuoteModal()" class="bg-dark-900 text-white font-bold px-8 py-4 rounded-xl shadow-2xl hover:bg-dark-800 transition transform hover:scale-105">
+                GET MY FREE QUOTE
+            </button>
+        </div>
+    </section>
+
+    <!-- LOCAL MOVING SERVICES AREA -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gray-50 border border-gray-200 rounded-3xl p-8 sm:p-12 lg:p-16 flex flex-col lg:flex-row items-center justify-between">
+                <div class="max-w-2xl mb-8 lg:mb-0">
+                    <span class="text-gold-600 font-bold uppercase tracking-widest text-xs">Local Coverage</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-dark-900 mt-2 mb-4">Proudly Serving Grantsville & Surrounding Communities</h2>
+                    <p class="text-gray-600 text-base mb-6 leading-relaxed">
+                        Looking for movers near you? Talofa Vision Movers provides moving assistance for residential and business customers in Grantsville, Utah and surrounding areas.
+                    </p>
+                    <p class="text-gray-600 text-sm italic">
+                        If you're not sure whether your location is within our service area, simply give us a call.
+                    </p>
+                </div>
+                <div>
+                    <a href="tel:5627661350" class="gold-gradient text-white font-bold px-8 py-4 rounded-xl shadow-md hover:opacity-95 transition flex items-center space-x-3 whitespace-nowrap">
+                        <i class="fa-solid fa-map-pin text-xl"></i>
+                        <span>CHECK OUR SERVICE AREA</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="py-24 bg-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-gold-600 font-bold uppercase tracking-widest text-xs">Got Questions?</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-dark-900 mt-2 mb-4">Frequently Asked Questions</h2>
+                <p class="text-gray-600">Everything you need to know about our moving services.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFaq(1)" class="w-full p-6 text-left font-bold text-dark-900 flex justify-between items-center focus:outline-none">
+                        <span>Do you provide free moving quotes?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-gold-600 transition transform"></i>
+                    </button>
+                    <div id="faq-content-1" class="hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4">
+                        Yes. Contact us with the details of your move and we'll discuss your requirements and provide information about your moving service.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFaq(2)" class="w-full p-6 text-left font-bold text-dark-900 flex justify-between items-center focus:outline-none">
+                        <span>Do you handle apartment moves?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-gold-600 transition transform"></i>
+                    </button>
+                    <div id="faq-content-2" class="hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4">
+                        Yes. We provide moving assistance for apartments, homes, and smaller residential moves.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFaq(3)" class="w-full p-6 text-left font-bold text-dark-900 flex justify-between items-center focus:outline-none">
+                        <span>Can you help load or unload my moving truck?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-gold-600 transition transform"></i>
+                    </button>
+                    <div id="faq-content-3" class="hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4">
+                        Yes. If you already have transportation arranged, our team can provide loading and unloading assistance.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFaq(4)" class="w-full p-6 text-left font-bold text-dark-900 flex justify-between items-center focus:outline-none">
+                        <span>Do you provide business moving services?</span>
+                        <i id="faq-icon-4" class="fa-solid fa-chevron-down text-gold-600 transition transform"></i>
+                    </button>
+                    <div id="faq-content-4" class="hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4">
+                        Yes. We can assist businesses and offices with moving furniture, equipment, and other items.
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFaq(5)" class="w-full p-6 text-left font-bold text-dark-900 flex justify-between items-center focus:outline-none">
+                        <span>Do I have to move everything myself?</span>
+                        <i id="faq-icon-5" class="fa-solid fa-chevron-down text-gold-600 transition transform"></i>
+                    </button>
+                    <div id="faq-content-5" class="hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4">
+                        No. That's exactly what we're here for. Tell us what you need help with and we'll discuss the best moving service for your situation.
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFaq(6)" class="w-full p-6 text-left font-bold text-dark-900 flex justify-between items-center focus:outline-none">
+                        <span>What areas do you serve?</span>
+                        <i id="faq-icon-6" class="fa-solid fa-chevron-down text-gold-600 transition transform"></i>
+                    </button>
+                    <div id="faq-content-6" class="hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4">
+                        We are based in Grantsville, Utah and serve customers in the surrounding area. Contact us to confirm availability for your location.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA SECTION -->
+    <section class="py-24 bg-dark-950 text-white border-t border-gray-900">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-5xl font-black mb-4">YOUR NEW BEGINNING STARTS HERE.</h2>
+            <h3 class="text-xl sm:text-2xl font-bold text-gold-500 mb-6">Let's Take the Stress Out of Moving.</h3>
+            
+            <p class="text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Whether you're moving across town, starting a new chapter in a new home, or relocating your business, you don't have to carry the entire load yourself. Let Talofa Vision Movers handle the heavy lifting.
+            </p>
+
+            <div class="bg-dark-900 border border-gray-800 rounded-3xl p-8 max-w-xl mx-auto mb-10 shadow-xl">
+                <h4 class="text-lg font-bold mb-6 text-white">Get Your Free Moving Quote Today.</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left mb-6">
+                    <div>
+                        <span class="block text-xs uppercase tracking-widest text-gray-400 font-semibold mb-1">CALL US:</span>
+                        <a href="tel:5627661350" class="text-lg font-black text-gold-500 hover:underline">(562) 766-1350</a>
+                    </div>
+                    <div>
+                        <span class="block text-xs uppercase tracking-widest text-gray-400 font-semibold mb-1">EMAIL:</span>
+                        <a href="mailto:lualua_janet@yahoo.com" class="text-sm font-bold text-white hover:text-gold-500 truncate block">lualua_janet@yahoo.com</a>
+                    </div>
+                </div>
+                <button onclick="openQuoteModal()" class="w-full gold-gradient text-white font-bold py-4 rounded-xl shadow-md hover:opacity-95 transition">
+                    REQUEST A FREE QUOTE →
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center space-x-3 mb-6 md:mb-0">
+                <img src="https://raw.githubusercontent.com/Creativetugs/Talofa-Vision-LLC/refs/heads/main/logo.jpg" alt="Talofa Vision Movers Logo" class="h-10 w-10 object-cover rounded-full border border-gold-500">
+                <div>
+                    <span class="block font-black text-white text-base">TALOFA VISION MOVERS</span>
+                    <span class="block text-xs text-gold-500">Professional Moving Services • Grantsville, Utah</span>
+                </div>
+            </div>
+
+            <div class="text-center md:text-right text-xs text-gray-500 space-y-2">
+                <p>Residential Moving • Local Moving • Apartment Moves • Business Moving • Loading & Unloading • Labor</p>
+                <p>© 2026 Talofa Vision Movers. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE QUOTE MODAL -->
+    <div id="quoteModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-8 relative shadow-2xl border border-gray-100 max-h-[90vh] overflow-y-auto">
+            <button onclick="closeQuoteModal()" class="absolute top-6 right-6 text-gray-400 hover:text-dark-900 text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="text-center mb-6">
+                <span class="text-gold-600 font-bold uppercase tracking-widest text-xs">Get Started</span>
+                <h3 class="text-2xl font-black text-dark-900 mt-1">Request Your Free Quote</h3>
+                <p class="text-gray-500 text-xs mt-1">Fill out the quick form below and we'll get right back to you.</p>
+            </div>
+
+            <form id="quoteForm" onsubmit="submitQuoteForm(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-700 mb-1">Your Full Name</label>
+                    <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-gold-500 text-sm bg-gray-50" placeholder="John Doe">
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-700 mb-1">Phone Number</label>
+                        <input type="tel" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-gold-500 text-sm bg-gray-50" placeholder="(562) 000-0000">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-700 mb-1">Email Address</label>
+                        <input type="email" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-gold-500 text-sm bg-gray-50" placeholder="john@example.com">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-700 mb-1">Moving From (City/Zip)</label>
+                        <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-gold-500 text-sm bg-gray-50" placeholder="Grantsville, UT">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-700 mb-1">Moving To (City/Zip)</label>
+                        <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-gold-500 text-sm bg-gray-50" placeholder="Salt Lake City, UT">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-700 mb-1">Service Type Needed</label>
+                    <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-gold-500 text-sm bg-gray-50">
+                        <option>Residential Moving</option>
+                        <option>Local Moving</option>
+                        <option>Apartment & Small Move</option>
+                        <option>Office & Business Moving</option>
+                        <option>Loading & Unloading Only</option>
+                        <option>Moving Labor</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-700 mb-1">Details About Your Move</label>
+                    <textarea rows="3" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-gold-500 text-sm bg-gray-50" placeholder="Number of rooms, date of move, special items..."></textarea>
+                </div>
+                <button type="submit" class="w-full gold-gradient text-white font-bold py-3.5 rounded-xl shadow-md hover:opacity-95 transition text-sm">
+                    SUBMIT QUOTE REQUEST
+                </button>
+            </form>
+            
+            <div id="quoteSuccessMessage" class="hidden text-center py-10">
+                <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <h4 class="text-xl font-bold text-dark-900 mb-2">Quote Request Received!</h4>
+                <p class="text-gray-600 text-sm mb-6">Thank you! We have received your details and will contact you shortly to discuss your move.</p>
+                <button onclick="closeQuoteModal()" class="gold-gradient text-white font-bold px-6 py-2.5 rounded-xl text-sm">Close Window</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Modal functions
+        function openQuoteModal() {
+            document.getElementById('quoteModal').classList.remove('hidden');
+            document.getElementById('quoteForm').reset();
+            document.getElementById('quoteForm').classList.remove('hidden');
+            document.getElementById('quoteSuccessMessage').classList.add('hidden');
+        }
+
+        function closeQuoteModal() {
+            document.getElementById('quoteModal').classList.add('hidden');
+        }
+
+        function submitQuoteForm(e) {
+            e.preventDefault();
+            document.getElementById('quoteForm').classList.add('hidden');
+            document.getElementById('quoteSuccessMessage').classList.remove('hidden');
+        }
+
+        // FAQ Toggle accordion
+        function toggleFaq(id) {
+            const content = document.getElementById(`faq-content-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        // Close modal on background click
+        window.onclick = function(event) {
+            const modal = document.getElementById('quoteModal');
+            if (event.target === modal) {
+                closeQuoteModal();
+            }
+        }
+    </script>
+</body>
+</html>
